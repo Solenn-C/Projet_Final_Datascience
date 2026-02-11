@@ -3,7 +3,7 @@
 ## Suivi des Tâches
 | ID | Tâche | Responsable | Branche Git |
 | :--- | :--- | :--- | :--- |
-| T01 | Import M1 + contrôle régularité | Coline Treille | |
+| T01 | Import M1 + contrôle régularité | Coline Treille | colinetreille__T01__importM1 |
 | T02 | Agrégation M1 M15 | Solenn Coulon | |
 | T03 | Nettoyage M15 + rapport qualité | Coline Treille | |
 | T04 | Analyse exploratoire | Solenn Coulon | |

@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # Service pour le nettoyage des données (Tâche de tes collègues)
+  data-prep:
+    build: .
+    volumes:
+      - .:/app
+    command: python features/colinetreille__T03__nettoyage_m15.py
+
+  # Service pour ton entraînement d'IA (Tâche T08)
+  train-rl:
+    build: .
+    volumes:
+      - .:/app
+    command: python features/rl_agent.py
+
+  # Service pour ton Backtest et tes graphiques (Tâche T12)
+  backtest:
+    build: .
+    volumes:
+      - .:/app
+    command: python features/backtest_rl.py

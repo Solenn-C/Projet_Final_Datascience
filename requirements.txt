@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+stable-baselines3
+shimmy
+gymnasium
+pandas_ta

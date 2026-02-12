@@ -6,22 +6,20 @@ class ModelService:
         print(f"✅ Service chargé : Utilisation du modèle {self.model_version}")
 
     def predict(self, data):
-        """
-        Logique extraite de models/evaluation.py :
-        La règle validée est : si RSI < 50 alors ACHAT (1), sinon VENTE (0).
-        """
         try:
             rsi_value = data.rsi
             
-            # Application de la règle du binôme
-            if rsi_value < 50:
-                action = 1  # Signal d'Achat
+            # --- LOGIQUE AVEC POSITION HOLD ---
+            if rsi_value < 40:
+                return 1  # BUY
+            elif rsi_value > 60:
+                return 0  # SELL
             else:
-                action = 0  # Signal de Vente
+                return 2  # HOLD (Zone entre 40 et 60)
+            # ----------------------------------
             
-            return action
         except Exception as e:
-            print(f"❌ Erreur lors du calcul : {e}")
+            print(f"❌ Erreur : {e}")
             return None
 
 # On crée l'instance prête à l'emploi

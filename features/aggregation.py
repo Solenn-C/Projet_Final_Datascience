@@ -16,7 +16,7 @@ df_m15 = df.resample('15Min').agg({
 
 # 3. Sauvegarde
 # Le fichier final sera enregistré dans le dossier features/
-df_m15.to_csv('features/gbpusd_m15.csv')
+df_m15.to_csv('data/gbpusd_m15.csv')
 
 print("Phase 2 terminée avec succès !")
 print(df_m15.head())

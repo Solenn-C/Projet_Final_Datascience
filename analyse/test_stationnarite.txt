@@ -1,0 +1,2 @@
+Statistique ADF : -34.3941
+p-value : 0.0000e+00

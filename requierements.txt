@@ -1,0 +1,9 @@
+@'
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+stable-baselines3==2.2.1
+shimmy>=0.3.0
+gymnasium==0.29.1
+pandas==2.1.4
+numpy==1.26.3
+'@ | Out-File -FilePath requirements.txt -Encoding utf8

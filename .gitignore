@@ -1,0 +1,24 @@
+# Python - Fichiers compilés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnement virtuel
+venv/
+.venv/
+env/
+
+# Variables d'environnement / Secrets
+.env
+
+# Dossiers d'IDE (VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de données volumineux (optionnel)
+*.csv
+*.zip

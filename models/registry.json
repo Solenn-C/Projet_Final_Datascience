@@ -1,0 +1,20 @@
+{
+    "v2": {
+        "path": "models/v2/model.pkl",
+        "metrics": {
+            "profit": "2.06%",
+            "sharpe": 0.63,
+            "profit_factor": 1.02
+        },
+        "status": "production"
+    },
+    "v1": {
+        "path": "models/v1/rsi_logic.py",
+        "metrics": {
+            "profit": "4.81%",
+            "sharpe": 1.33,
+            "profit_factor": 1.04
+        },
+        "status": "archive"
+    }
+}

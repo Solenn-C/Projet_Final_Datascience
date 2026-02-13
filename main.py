@@ -7,7 +7,7 @@ app = FastAPI(
     description="API de prédiction GBP/USD avec PPO et RSI"
 )
 
-# Inclusion des routes avec le préfixe de versioning
+# Ton préfixe ici crée l'URL : http://127.0.0.1:8000/api/v1/...
 app.include_router(predict.router, prefix="/api/v1", tags=["Predictions"])
 
 @app.get("/", tags=["Health"])
@@ -20,5 +20,4 @@ def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-    # Lancement du serveur
     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

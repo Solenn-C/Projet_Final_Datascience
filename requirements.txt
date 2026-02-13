@@ -1,3 +1,4 @@
+# --- Cœur du Projet (IA & Data Science) ---
 numpy
 pandas
 matplotlib
@@ -7,3 +8,11 @@ stable-baselines3
 shimmy
 gymnasium
 pandas_ta
+
+# --- Serveur & API (FastAPI) ---
+fastapi
+uvicorn
+
+# --- Interface Web (Flask) ---
+flask
+requests

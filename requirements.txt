@@ -1,0 +1,20 @@
+# --- Serveur API ---
+fastapi
+uvicorn[standard]
+pydantic
+
+# --- Manipulation de données ---
+pandas
+numpy
+
+# --- Machine Learning & Modèles ---
+joblib
+scikit-learn
+xgboost
+
+# --- Reinforcement Learning ---
+stable-baselines3
+shimmy>=2.0
+
+# --- Visualisation ---
+matplotlib
